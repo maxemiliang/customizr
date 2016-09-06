@@ -8,7 +8,12 @@ let changeColor = (color) => {
 
 let updateSliders = () => {
   let getRGB = string => {
-    return string.split('(')[1].split(')')[0].split(',')
+    let arr = string.split('(')[1].split(')')[0].split(',')
+    let arr2 = []
+    arr.forEach(element => {
+      arr2.push(element.trim())
+    })
+    return arr2
   }
   let initColor = $('#shirt').css('backgroundColor')
   let initColorArray = getRGB(initColor)
@@ -30,3 +35,5 @@ let customRGBSlider = (id) => {
     // todo
   }
 } 
+
+updateSliders()
