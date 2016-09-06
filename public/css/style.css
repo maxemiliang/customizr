@@ -1,0 +1,108 @@
+ @import 'https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab';
+
+* {
+  box-sizing: border-box;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-family: 'Roboto Slab', serif;
+}
+
+.header {
+  font-size: 30px;
+  text-align: center;
+}
+
+.header > p {
+  color: lightslategrey;
+}
+
+.wrapper {
+  position: relative;
+  left: 50%;
+  margin-left: -250px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 500px;
+}
+
+.shirtStyle {
+  background-color: lightslategrey;
+  max-width: 500px;
+}
+
+.preset-color {
+  display: flex;
+  width: 500px;
+  height: 50px;
+  flex-direction: row;
+}
+
+.color-choice {
+  background: red;
+  margin-left: 5px;
+  margin-right: 5px;
+  flex: 90px 1 0;
+  box-shadow: 0px 0px 3px black;
+  border-radius: 10%;
+}
+
+.preset1 {
+  background: deepskyblue;
+}
+
+.preset2 {
+  background: mediumseagreen;
+}
+
+.preset3 {
+  background: darkred;
+}
+
+.preset4 {
+  background: yellow;
+}
+
+.preset5 {
+  background: deeppink;
+}
+
+.slider-select {
+  display: flex;
+  width: 500px;
+  height: 100%;
+  padding-left: 100px;
+  padding-bottom: 30px;
+  flex-direction: column;
+  margin-top: 5px;
+  border: 3px lightblue solid;
+  border-radius: 10px;
+}
+
+.redcolor, .greencolor, .bluecolor {
+  margin-top: 20px;
+  width: 90%
+}
+
+.ranger {
+  width: 65%;
+  border-radius: 50px;
+}
+
+.number-ranger {
+  width: 14%;
+}
+
+.placeholder {
+  width: 24%;
+  font-family: 'Roboto Slab', serif;
+}

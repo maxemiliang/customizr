@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Customizr-Shop</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="public/css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
+    <script defer src="public/js/script.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <h1>Customizr-Shop</h1>
+        <p>Get a fully customized item today</p>
+      </div>
+      <img src="public/img/tshirt.png" id="shirt" class="shirtStyle"></img>
+      <div class="preset-color">
+        <div class="color-choice preset1" onclick="changeColor('deepskyblue')"></div>
+        <div class="color-choice preset2" onclick="changeColor('mediumseagreen')"></div>
+        <div class="color-choice preset3" onclick="changeColor('darkred')"></div>
+        <div class="color-choice preset4" onclick="changeColor('yellow')"></div>
+        <div class="color-choice preset5" onclick="changeColor('deeppink')"></div>
+      </div>
+      <div class="slider-select">
+        <h3>Custom color value</h3>
+        <div class="redcolor">
+          <span class="placeholder">Red:</span><input id="slider1" oninput="customRGBSlider(1)" class="ranger" type="range" min="0" max="255"><input id="number1" class="number-ranger" min="0" max="255" type="number">
+        </div>
+        <div class="greencolor">
+          <span class="placeholder">Green:</span><input id="slider2" oninput="customRGBSlider(2)" class="ranger" type="range" min="0" max="255"><input id="number2" class="number-ranger" min="0" max="255" type="number">
+        </div>
+        <div class="bluecolor">
+          <span class="placeholder">Blue:</span><input id="slider3" oninput="customRGBSlider(3)" class="ranger" type="range" min="0" max="255"><input id="number3" class="number-ranger" min="0" max="255" type="number">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
