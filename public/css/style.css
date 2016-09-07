@@ -116,6 +116,25 @@ p {
   user-select: text;
 }
 
+#customtext {
+  width: 80%;
+  border-radius: 5px;
+  padding: 2px;
+  -moz-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+#texttshirt {
+  position: relative;
+  top: -390px;
+  left: 150px;
+  font-size: 24px;
+  max-width: 200px;
+  word-wrap: break-word;
+}
+
 .placeholder {
   width: 24%;
   font-family: 'Roboto Slab', serif;

@@ -15,6 +15,7 @@
         <p>Get a fully customized item today</p>
       </div>
       <img src="public/img/tshirt.png" id="shirt" class="shirtStyle"></img>
+      <div id="texttshirt"></div>
       <div class="preset-color">
         <div class="color-choice preset1" onclick="changeColor('deepskyblue')"></div>
         <div class="color-choice preset2" onclick="changeColor('mediumseagreen')"></div>
@@ -40,6 +41,10 @@
         <h3>Custom Hex Code:</h3>
         <div class="hex-value">
           <input id="hexinput" oninput="hexValue()" placeholder="Insert a hexcode" class="text" type="text" maxlength="7">
+        </div>
+        <h3>Custom Text:</h3>
+        <div class="hex-value">
+          <input id="customtext" oninput="customText()" placeholder="Text to print" class="text" type="text" maxlength="100">
         </div>
       </div>
     </div>

@@ -97,4 +97,11 @@ let hexValue = () => {
   }
 }
 
+let customText = () => {
+  let custom = $('#customtext').val()
+  if (custom.length > 0 && custom.length <= 100) {  
+    $('#texttshirt').text(custom)
+  }
+}
+
 updateSliders()
