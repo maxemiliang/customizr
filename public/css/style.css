@@ -106,6 +106,16 @@ p {
   width: 80%;
 }
 
+#hexinput {
+  width: 80%;
+  border-radius: 5px;
+  padding: 2px;
+  -moz-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
 .placeholder {
   width: 24%;
   font-family: 'Roboto Slab', serif;

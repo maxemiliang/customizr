@@ -83,6 +83,18 @@ let greyScale = () => {
   } 
 }
 
-
+let hexValue = () => {
+  let hex = $('#hexinput').val()
+  if (hex.substr(0, 1) !== '#') {
+    hex = hex.split('#').shift()
+    $('#hexinput').val('#' + hex)
+  }
+  if (hex.length < 6 || hex.length > 7) return false
+  if (hex.length === 7) {
+    $('#shirt').css('backgroundColor', hex)
+  } else {
+    return false
+  }
+}
 
 updateSliders()
