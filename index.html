@@ -23,15 +23,23 @@
         <div class="color-choice preset5" onclick="changeColor('deeppink')"></div>
       </div>
       <div class="slider-select">
-        <h3>Custom color value</h3>
+        <h3>Custom RGB Value:</h3>
         <div class="redcolor">
-          <span class="placeholder">Red:</span><input id="slider1" oninput="customRGBSlider(1)" class="ranger" type="range" min="0" max="255"><input id="number1" class="number-ranger" min="0" max="255" type="number">
+          <span class="placeholder">Red:</span><input id="slider1" oninput="customRGBSlider(1)" class="ranger" type="range" min="0" max="255"><input oninput="customRGBNumber(1)" id="number1" class="number-ranger" min="0" max="255" type="number">
         </div>
         <div class="greencolor">
-          <span class="placeholder">Green:</span><input id="slider2" oninput="customRGBSlider(2)" class="ranger" type="range" min="0" max="255"><input id="number2" class="number-ranger" min="0" max="255" type="number">
+          <span class="placeholder">Green:</span><input id="slider2" oninput="customRGBSlider(2)" class="ranger" type="range" min="0" max="255"><input oninput="customRGBNumber(2)" id="number2" class="number-ranger" min="0" max="255" type="number">
         </div>
         <div class="bluecolor">
-          <span class="placeholder">Blue:</span><input id="slider3" oninput="customRGBSlider(3)" class="ranger" type="range" min="0" max="255"><input id="number3" class="number-ranger" min="0" max="255" type="number">
+          <span class="placeholder">Blue:</span><input id="slider3" oninput="customRGBSlider(3)" class="ranger" type="range" min="0" max="255"><input oninput="customRGBNumber(3)" id="number3" class="number-ranger" min="0" max="255" type="number">
+        </div>
+        <h3>Greyscale:</h3>
+        <div class="grey-value">
+          <input id="greyslider" oninput="greyScale()" class="ranger" type="range" min="0" max="255">
+        </div>
+        <h3>Custom Hex Code:</h3>
+        <div class="hex-value">
+          <input id="hexinput" oninput="hexValue()" class="text" type="text" min="0" max="7">
         </div>
       </div>
     </div>

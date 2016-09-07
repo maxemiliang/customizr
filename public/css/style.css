@@ -80,10 +80,10 @@ p {
   display: flex;
   width: 500px;
   height: 100%;
-  padding-left: 100px;
+  padding-left: 80px;
   padding-bottom: 30px;
   flex-direction: column;
-  margin-top: 5px;
+  margin-top: 10px;
   border: 3px lightblue solid;
   border-radius: 10px;
 }
@@ -100,6 +100,10 @@ p {
 
 .number-ranger {
   width: 14%;
+}
+
+#greyslider {
+  width: 80%;
 }
 
 .placeholder {
