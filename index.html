@@ -46,7 +46,10 @@
         </div>
         <h3>Custom Text:</h3>
         <div class="hex-value">
+          <span>Insert Custom text:</span>
           <input id="customtext" oninput="customText()" placeholder="Text to print" class="text" type="text" maxlength="100">
+          <br>
+          <span>Select a Custom Font:</span>
           <select class="text" oninput="customFont()" id="customfont">
             <option value=""></option>
             <option value="1">Comic Sans</option>
@@ -54,7 +57,11 @@
             <option value="3">Consolas</option>
             <option value="4">Impact</option>
           </select>
+          <br>
+          <span>Insert a Custom Font Size:</span>
           <input id="fontsize" oninput="customSize()" placeholder="Font-size" class="text" type="number" min="1" max="72">
+          <br>
+          <span>Insert a Custom Color:</span>
           <input id="hexfontinput" oninput="hexFontValue()" placeholder="Insert a hexcode to change font color" class="text" type="text" maxlength="7">
           <br>
           <button onclick="makeBold()" class="btn">Bold text</button>
