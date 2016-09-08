@@ -14,8 +14,10 @@
         <h1>Customizr-Shop</h1>
         <p>Get a fully customized item today</p>
       </div>
-      <img src="public/img/tshirt.png" id="shirt" class="shirtStyle"></img>
-      <div id="texttshirt"></div>
+      <div class="shirt-wrapper">
+        <img src="public/img/tshirt.png" id="shirt" class="shirtStyle"></img>
+        <div id="texttshirt"></div>
+      </div>
       <div class="preset-color">
         <div class="color-choice preset1" onclick="changeColor('deepskyblue')"></div>
         <div class="color-choice preset2" onclick="changeColor('mediumseagreen')"></div>
@@ -45,6 +47,18 @@
         <h3>Custom Text:</h3>
         <div class="hex-value">
           <input id="customtext" oninput="customText()" placeholder="Text to print" class="text" type="text" maxlength="100">
+          <select class="text" oninput="customFont()" id="customfont">
+            <option value=""></option>
+            <option value="1">Comic Sans</option>
+            <option value="2">Arial</option>
+            <option value="3">Consolas</option>
+            <option value="4">Impact</option>
+          </select>
+          <input id="fontsize" oninput="customSize()" placeholder="Font-size" class="text" type="number" min="1" max="72">
+          <input id="hexfontinput" oninput="hexFontValue()" placeholder="Insert a hexcode to change font color" class="text" type="text" maxlength="7">
+          <br>
+          <button onclick="makeBold()" class="btn">Bold text</button>
+          <button onclick="makeItalic()" class="btn">Italic text</button>
         </div>
       </div>
     </div>

@@ -106,6 +106,22 @@ p {
   width: 80%;
 }
 
+.font-bolder {
+  font-weight: bold;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+.btn {
+  width: 39%;
+  border: 0px;
+  margin-top: 5px;
+  padding: 5px;
+  background: deepskyblue;
+}
+
 #hexinput {
   width: 80%;
   border-radius: 5px;
@@ -132,10 +148,27 @@ p {
   left: 150px;
   font-size: 24px;
   max-width: 200px;
+  height: 260px;
   word-wrap: break-word;
+  overflow: hidden;
+}
+
+.text {
+  margin-top: 4px;
+  width: 80%;
+  border-radius: 5px;
+  padding: 2px;
+  -moz-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
 }
 
 .placeholder {
   width: 24%;
   font-family: 'Roboto Slab', serif;
+}
+
+.shirt-wrapper {
+  height: 550px;
 }

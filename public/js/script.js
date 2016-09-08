@@ -1,6 +1,5 @@
 'use strict'
 
-
 let changeColor = (color) => {
   document.getElementById('shirt').style.background = color
   updateSliders()
@@ -99,9 +98,55 @@ let hexValue = () => {
 
 let customText = () => {
   let custom = $('#customtext').val()
-  if (custom.length > 0 && custom.length <= 100) {  
+  if (custom.length >= 0 && custom.length <= 100) {  
     $('#texttshirt').text(custom)
   }
 }
+
+let customFont = () => {
+  let custom = $('#customfont').val()
+  if (custom === '1') {  
+    $('#texttshirt').css('fontFamily', 'Comic Sans Ms')
+  }
+  if (custom === '2') {  
+    $('#texttshirt').css('fontFamily', 'Arial')
+  }
+  if (custom === '3') {  
+    $('#texttshirt').css('fontFamily', 'Consolas')
+  }
+  if (custom === '4') {  
+    $('#texttshirt').css('fontFamily', 'Impact')
+  }
+}
+
+let customSize = () => {
+  let custom = $('#fontsize').val()
+  if (custom > 0 && custom <= 72) {
+    $('#texttshirt').css('fontSize', custom + 'px')
+  }
+}
+
+let hexFontValue = () => {
+  let hex = $('#hexfontinput').val()
+  if (hex.substr(0, 1) !== '#') {
+    hex = hex.split('#').shift()
+    $('#hexfontinput').val('#' + hex)
+  }
+  if (hex.length < 6 || hex.length > 7) return false
+  if (hex.length === 7) {
+    $('#texttshirt').css('color', hex)
+  } else {
+    return false
+  }
+}
+
+let makeBold = () => {
+  $('#texttshirt').toggleClass('font-bolder')
+}
+
+let makeItalic = () => {
+  $('#texttshirt').toggleClass('font-italic')
+}
+
 
 updateSliders()
