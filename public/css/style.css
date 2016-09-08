@@ -156,6 +156,7 @@ span {
   height: 260px;
   word-wrap: break-word;
   overflow: hidden;
+  text-align: center;
 }
 
 .text {
